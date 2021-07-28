@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #4E5150;
+  --secondary-color: #A9A9A9;
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: 'Baloo Chettan 2', cursive;
+}
+
+body {
+  font-family: var(--primary-font);
+}
+
+h1, h2 {
+  font-family: var(--secondary-font);
+}
