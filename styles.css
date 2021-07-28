@@ -15,8 +15,26 @@
 body {
   font-family: var(--primary-font);
   color: var(--charcoal);
+  margin: 0;
 }
 
 h1, h2 {
   font-family: var(--secondary-font);
+}
+
+nav img {
+  width: 200px;
+}
+
+#comunidad {
+  background-image: url("images/bg-green.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+#who {
+  background-image: url("images/bg-pink.svg");
+  height: 600px;
 }
