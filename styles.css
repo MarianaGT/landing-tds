@@ -10,6 +10,7 @@
   --blue: #6685F2;
   --light-blue: #0033EA;
   --charcoal: #263238;
+  --primary-blue: #2F1FE8;
 }
 
 body {
@@ -21,6 +22,22 @@ body {
 
 h1, h2 {
   font-family: var(--secondary-font);
+}
+
+.center {
+  text-align: center;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.bg-green {
+  background-color: var(--green);
 }
 
 nav {
@@ -38,15 +55,28 @@ nav a {
   margin: 2em 1em 1em 1em;
 }
 
+#benefits {
+  background-color: var(--primary-blue);
+}
+
 #comunidad {
   background-image: url("images/bg-green.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
+  // background-position: center;
+}
+
+#how
+
+.how-box {
+  height: 100px;
+  width: 100px;
+  padding: 0.1em;
 }
 
 #who {
   background-image: url("images/bg-pink.svg");
   height: 600px;
 }
+
+
