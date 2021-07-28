@@ -1,12 +1,20 @@
 :root {
-  --primary-color: #4E5150;
-  --secondary-color: #A9A9A9;
   --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Baloo Chettan 2', cursive;
+  --yellow: #FEEC72;
+  --light-yellow: #FFF5B8;
+  --pink: #FF7ABC;
+  --light-pink: #FFD7EB;
+  --green: #32E27C;
+  --light-green: #C1F6D8;
+  --blue: #6685F2;
+  --light-blue: #0033EA;
+  --charcoal: #263238;
 }
 
 body {
   font-family: var(--primary-font);
+  color: var(--charcoal);
 }
 
 h1, h2 {
