@@ -92,9 +92,13 @@ nav a {
 #how
 
 .how-box {
-  height: 100px;
-  width: 100px;
-  padding: 0.1em;
+  height: 80px;
+  width: 80px;
+  padding: 0.5em;
+}
+
+.how-box img {
+  height: 20px;
 }
 
 #who {
