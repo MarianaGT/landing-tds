@@ -28,6 +28,14 @@ h1, h2 {
   text-align: center;
 }
 
+.white {
+  color:  white;
+}
+
+.green {
+  color: var(--green);
+}
+
 .bg-yellow {
   background-color: var(--yellow);
 }
@@ -39,6 +47,21 @@ h1, h2 {
 .bg-green {
   background-color: var(--green);
 }
+
+.icon {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0.5em;
+  margin: 1em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 nav {
   display: flex;
