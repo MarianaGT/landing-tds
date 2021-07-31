@@ -52,6 +52,10 @@ h1, h2 {
   background-color: var(--blue);
 }
 
+.p-body {
+  padding: 1em;
+}
+
 .icon {
   border-radius: 50%;
   height: 30px;
@@ -93,7 +97,9 @@ nav a {
   // background-position: center;
 }
 
-#how
+#how {
+  background-image: url("images/bg-how.png");
+}
 
 .how-box {
   height: 80px;
@@ -130,6 +136,10 @@ nav a {
   .how-box-flex {
     display: flex;
     justify-content: space-between;
+  }
+
+  .p-body {
+    padding: 2em;
   }
 }
 
