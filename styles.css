@@ -104,7 +104,16 @@ nav a {
   border-radius: 2px;
 }
 
-.how-box img {
+.how-box-2 {
+  height: 80px;
+  width: 240px;
+  padding: 0.8em;
+  font-size: 0.8em;
+  line-height: 0.5em;
+  border-radius: 2px;
+}
+
+.how-box img, .how-box-2 img {
   height: 20px;
 }
 
