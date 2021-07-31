@@ -77,21 +77,38 @@ h3, strong {
   padding: 2em;
 }
 
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 1em;
+  border-radius: 30px;
+  box-shadow: 3px 3px 4px #d6d6d6;
+  margin: 0 auto;
+  max-width: 190px;
+}
+
 .btn-dark {
   display: block;
   font-family: var(--secondary-font);
   color: var(--yellow);
-  text-align: center;
-  text-decoration: none;
   line-height: 1em;
   background-color: var(--charcoal);
-  border: none;
-  padding: 1em;
-  border-radius: 30px;
   font-size: 1.5em;
   box-shadow: 3px 3px 4px #d6d6d6;
   margin: 0 auto;
-  max-width: 190px;
+
+}
+
+.btn-light {
+  display: block;
+  font-family: var(--primary-font);
+  color: var(--charcoal);
+  background-color: var(--green);
+  font-size: 1.2em;
+
+  margin: 0 auto;
 }
 
 .icon {
