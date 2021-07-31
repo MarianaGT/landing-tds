@@ -210,6 +210,11 @@ nav a {
   background-color: var(--charcoal);
 }
 
+footer img {
+  height: 40px;
+  margin: 0.5em;
+}
+
 @media only screen and (min-width: 992px) {
   nav img {
     width: 200px;
