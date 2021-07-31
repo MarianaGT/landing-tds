@@ -33,24 +33,16 @@ h3, strong {
   font-weight: 500;
 }
 
-
-.btn-dark {
-  font-family: var(--secondary-font);
-  color: var(--yellow);
-  background-color: var(--charcoal);
-  border: none;
-  padding: 1em;
-  border-radius: 30px;
-  font-size: 1.5em;
-  box-shadow: 3px 3px 4px #d6d6d6;
-}
-
 .little-text {
   font-size: 0.8em;
 }
 
 .center {
   text-align: center;
+}
+
+.right {
+  float: right;
 }
 
 .white {
@@ -83,6 +75,23 @@ h3, strong {
 
 .p-2 {
   padding: 2em;
+}
+
+.btn-dark {
+  display: block;
+  font-family: var(--secondary-font);
+  color: var(--yellow);
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  background-color: var(--charcoal);
+  border: none;
+  padding: 1em;
+  border-radius: 30px;
+  font-size: 1.5em;
+  box-shadow: 3px 3px 4px #d6d6d6;
+  margin: 0 auto;
+  max-width: 190px;
 }
 
 .icon {
@@ -120,13 +129,17 @@ nav a {
   background-color: var(--primary-blue);
 }
 
-#comunidad {
+#community {
   background-image: url("images/bg-green.svg");
   background-position: center;
 /*
   background-size: contain;
   background-repeat: no-repeat;
   */
+}
+
+.community-box {
+  max-width: 360px;
 }
 
 #how {
