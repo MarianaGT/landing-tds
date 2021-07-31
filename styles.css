@@ -210,6 +210,10 @@ nav a {
   background-color: var(--charcoal);
 }
 
+.coming-soon img {
+  width: 190px;
+}
+
 footer img {
   height: 40px;
   margin: 0.5em;
