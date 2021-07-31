@@ -48,6 +48,10 @@ h1, h2 {
   background-color: var(--green);
 }
 
+.bg-blue {
+  background-color: var(--blue);
+}
+
 .icon {
   border-radius: 50%;
   height: 30px;
@@ -95,11 +99,9 @@ nav a {
   height: 80px;
   width: 80px;
   padding: 0.8em;
-}
-
-.how-box {
   font-size: 0.8em;
   line-height: 0.5em;
+  border-radius: 2px;
 }
 
 .how-box img {
