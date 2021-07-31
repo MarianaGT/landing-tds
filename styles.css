@@ -24,6 +24,15 @@ h1, h2 {
   font-family: var(--secondary-font);
 }
 
+h1 {
+  font-size: 2em;
+  color: var(--green);
+}
+
+.little-text {
+  font-size: 0.8em;
+}
+
 .center {
   text-align: center;
 }
@@ -70,20 +79,21 @@ h1, h2 {
   justify-content: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
 
 nav {
   display: flex;
 }
 
 nav img {
-  width: 200px;
+  width: 150px;
   margin: 1em 2em 1em 1em;
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--charcoal);
-  margin: 2em 1em 1em 1em;
+  display: none;
 }
 
 #benefits {
@@ -92,9 +102,11 @@ nav a {
 
 #comunidad {
   background-image: url("images/bg-green.svg");
+  background-position: center;
+/*
   background-size: contain;
   background-repeat: no-repeat;
-  // background-position: center;
+  */
 }
 
 #how {
@@ -105,7 +117,6 @@ nav a {
   height: 80px;
   width: 80px;
   padding: 0.8em;
-  font-size: 0.8em;
   line-height: 0.5em;
   border-radius: 2px;
 }
@@ -114,7 +125,6 @@ nav a {
   height: 80px;
   width: 240px;
   padding: 0.8em;
-  font-size: 0.8em;
   line-height: 0.5em;
   border-radius: 2px;
 }
@@ -133,6 +143,23 @@ nav a {
 }
 
 @media only screen and (min-width: 992px) {
+  nav img {
+    width: 200px;
+    margin: 1em 2em 1em 1em;
+  }
+
+  nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--charcoal);
+    margin: 2em 1em 1em 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: var(--green);
+  }
+
   .how-box-flex {
     display: flex;
     justify-content: space-between;
