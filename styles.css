@@ -126,4 +126,11 @@ nav a {
   height: 600px;
 }
 
+@media only screen and (min-width: 992px) {
+  .how-box-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 
