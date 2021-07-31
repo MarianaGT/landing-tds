@@ -11,6 +11,7 @@
   --light-blue: #0033EA;
   --charcoal: #263238;
   --primary-blue: #2F1FE8;
+  --aqua: #05FCD0;
 }
 
 body {
@@ -105,9 +106,9 @@ h3, strong {
   display: block;
   font-family: var(--primary-font);
   color: var(--charcoal);
-  background-color: var(--green);
+  background-color: var(--aqua);
   font-size: 1.2em;
-
+  box-shadow: 2px 2px 4px var(--charcoal);
   margin: 0 auto;
 }
 
