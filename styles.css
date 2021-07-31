@@ -202,6 +202,10 @@ nav a {
   line-height: 0.5em;
 }
 
+.coming-soon {
+  background-color: var(--charcoal);
+}
+
 @media only screen and (min-width: 992px) {
   nav img {
     width: 200px;
