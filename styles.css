@@ -29,6 +29,10 @@ h1 {
   color: var(--green);
 }
 
+h3 {
+  font-weight: 500;
+}
+
 .little-text {
   font-size: 0.8em;
 }
@@ -61,8 +65,12 @@ h1 {
   background-color: var(--blue);
 }
 
-.p-body {
+.p-body, .p-1 {
   padding: 1em;
+}
+
+.p-2 {
+  padding: 2em;
 }
 
 .icon {
@@ -123,7 +131,7 @@ nav a {
 
 .how-box-2 {
   height: 80px;
-  width: 240px;
+  width: 200px;
   padding: 0.8em;
   line-height: 0.5em;
   border-radius: 2px;
@@ -131,6 +139,12 @@ nav a {
 
 .how-box img, .how-box-2 img {
   height: 20px;
+}
+
+.cellphone {
+  display: block;
+  height: 400px;
+  margin: 0 auto;
 }
 
 .text-spacing {
@@ -160,14 +174,24 @@ nav a {
     color: var(--green);
   }
 
-  .how-box-flex {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .p-body {
     padding: 2em;
   }
+
+  .how-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cellphone {
+    height: 600px;
+  }
+
+/*  .how-box-flex {
+    display: flex;
+  }*/
+
+
 }
 
 
