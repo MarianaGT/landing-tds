@@ -149,6 +149,11 @@ nav a {
   background-color: var(--primary-blue);
 }
 
+#benefits h2 {
+  margin-bottom: -0.4em;
+  line-height: 1em;
+}
+
 #community {
   background-image: url("images/bg-green.svg");
   background-position: center;
