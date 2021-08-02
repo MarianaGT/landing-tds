@@ -118,6 +118,10 @@ h3, strong {
   margin: 1em;
 }
 
+.icon img {
+  height: 20px;
+}
+
 .flex {
   display: flex;
   align-items: center;
