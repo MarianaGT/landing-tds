@@ -211,7 +211,7 @@ nav a {
 }
 
 .coming-soon img {
-  width: 190px;
+  width: 160px;
 }
 
 footer img {
@@ -260,6 +260,14 @@ footer img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .coming-soon-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .coming-soon-flex h2 {
+    margin-right: 2em;
+  }
 }
 
 
