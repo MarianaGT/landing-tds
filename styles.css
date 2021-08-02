@@ -4,11 +4,11 @@
   --yellow: #FEEC72;
   --light-yellow: #FFF5B8;
   --pink: #FF7ABC;
-  --light-pink: #FFD7EB;
+  --light-pink: #FFA2D0;
   --green: #32E27C;
   --light-green: #C1F6D8;
   --blue: #6685F2;
-  --light-blue: #0033EA;
+  --light-blue: #88A2FF;
   --charcoal: #263238;
   --primary-blue: #2F1FE8;
   --aqua: #05FCD0;
@@ -59,7 +59,7 @@ h3, strong {
 }
 
 .bg-pink {
-  background-color: var(--pink);
+  background-color: var(--light-pink);
 }
 
 .bg-green {
@@ -68,6 +68,10 @@ h3, strong {
 
 .bg-blue {
   background-color: var(--blue);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
 }
 
 .bg-cover {
