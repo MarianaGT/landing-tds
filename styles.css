@@ -70,12 +70,21 @@ h3, strong {
   background-color: var(--blue);
 }
 
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+
 .p-body, .p-1 {
   padding: 1em;
 }
 
 .p-2 {
   padding: 2em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
 }
 
 .btn {
@@ -156,7 +165,6 @@ nav a {
 
 #community {
   background-image: url("images/bg-green.svg");
-  background-position: center;
 /*
   background-size: contain;
   background-repeat: no-repeat;
@@ -199,6 +207,10 @@ nav a {
 
 .text-spacing {
   letter-spacing: 0.1em;
+}
+
+.coming-soon-flex {
+  padding-bottom: 2em;
 }
 
 #who {
@@ -272,6 +284,7 @@ footer img {
   .coming-soon-flex {
     display: flex;
     justify-content: center;
+    padding-bottom: 0;
   }
 
   .coming-soon-flex h2 {
