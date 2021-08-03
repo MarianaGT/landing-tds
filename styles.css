@@ -27,7 +27,7 @@ h1, h2 {
 
 h1 {
   font-size: 2em;
-  color: var(--green);
+  color: var(--aqua);
 }
 
 h3, strong {
@@ -169,6 +169,19 @@ nav a {
   line-height: 1em;
 }
 
+#benefits h3 {
+  font-weight: 300;
+}
+
+.benefits-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.benefit {
+  display: block;
+}
+
 #community {
   background-image: url("images/bg-green.svg");
 /*
@@ -261,7 +274,6 @@ footer img {
 
   h1 {
     font-size: 3em;
-    color: var(--green);
   }
 
   .p-body {
