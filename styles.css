@@ -50,8 +50,8 @@ h3, strong {
   color:  white;
 }
 
-.green {
-  color: var(--green);
+.aqua {
+  color: var(--aqua);
 }
 
 .bg-yellow {
@@ -64,6 +64,10 @@ h3, strong {
 
 .bg-green {
   background-color: var(--green);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
 }
 
 .bg-blue {
@@ -160,7 +164,7 @@ nav a {
 
 #benefits {
   background-color: var(--primary-blue);
-  background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.52), rgba(117, 19, 93, 0.73)),
+  background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.52), rgba(47, 31, 232, 0.52)),
     url('images/tanderos-lg.png');
 }
 
@@ -171,15 +175,7 @@ nav a {
 
 #benefits h3 {
   font-weight: 300;
-}
-
-.benefits-box {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.benefit {
-  display: block;
+  font-size: 0.9em;
 }
 
 #community {
@@ -192,6 +188,10 @@ nav a {
 
 .community-box {
   max-width: 360px;
+}
+
+.testimonial-pic {
+  height: 180px;
 }
 
 #how {
@@ -238,12 +238,15 @@ nav a {
 
 .who-box {
   line-height: 0.5em;
-
 }
 
 .who-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.equipo-pic {
+  width: 90%;
 }
 
 .coming-soon {
@@ -273,11 +276,22 @@ footer img {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: -0.3em;
   }
 
   .p-body {
     padding: 2em;
+  }
+
+  #benefits h3 {
+    font-size: 1.3em;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
   }
 
   .how-grid {
@@ -286,7 +300,7 @@ footer img {
   }
 
   .cellphone {
-    height: 600px;
+    height: 500px;
   }
 
   .how-box-flex {
@@ -297,6 +311,14 @@ footer img {
   .who-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .who-text {
+    max-width: 80%;
+  }
+
+  .equipo-pic {
+    width: 60%;
   }
 
   .coming-soon-flex {
