@@ -300,6 +300,10 @@ nav a {
   height: 180px;
 }
 
+.community-box {
+  margin-top: -1.3em;
+}
+
 
 /*How*/
 #how {
