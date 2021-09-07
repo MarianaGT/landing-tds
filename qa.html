@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandamos preguntas frecuentes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navlinks bg-lilac">
+    <img class="logo" src="images/logo.svg" alt="Tandamos logo">
+    <div>
+      <a href="index.html#how">Cómo funciona</a>
+      <a href="index.html#who">Quiénes somos</a>
+      <a href="">Preguntas frecuentes</a>
+      <a href="index.html#contact">Únete</a>
+    </div>
+    <img id="menuBtn" class="icon-menu" src="images/icon-menu.svg" alt="">
+  </nav>
+  <div id="menuModal" class="modal">
+    <span class="material-icons md-48 close">close</span>
+    <div class="modal-content">
+      <a href="index.html#how" class="close">Cómo funciona</a><br>
+      <a href="index.html#who">Quiénes somos</a><br>
+      <a href="qa.html">Preguntas frecuentes</a><br>
+      <a href="index.html#contact">Únete</a>
+    </div>
+  </div>
+
+  <div class="tab">
+    <h1 class="qa-title">¿Tienes preguntas?</h1>
+    <button class="tablinks bg-yellow" onclick="openCity(event, 'general')">General</button>
+    <button class="tablinks bg-pink" onclick="openCity(event, 'ingreso')">Ingreso</button>
+    <button class="tablinks bg-green" onclick="openCity(event, 'pagos')">Pagos</button>
+    <button class="tablinks bg-light-blue" onclick="openCity(event, 'comision')">Comisión</button>
+    <button class="tablinks" onclick="openCity(event, 'seguridad')">Seguridad</button>
+    <button class="tablinks bg-aqua" onclick="openCity(event, 'ayuda')">Ayuda</button>
+  </div>
+
+  <!-- Tab content -->
+  <section id="general" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Qué es Tandamos?</h2>
+    </div>
+    <p>Una empresa comprometida con la creación de soluciones que mejoren la salud financiera de millones de mexicanos y mexicanas. Sin usura, sin engaños</p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo funciona Tandamos?</h2>
+    </div>
+    <p> Como una tanda pero sin grupos. Es entre tú y Tandamos. Podrás armar tu unitanda:<br>
+      <ul>
+        <li>Sin riesgo a que te queden mal.</li>
+        <li>Con la comodidad de tener tu unitanda cuando tú lo decidas.</li>
+      </ul><br>
+      A través de la aplicación podrás elegir:<br>
+      <ul>
+        <li>Pagar semanal o quincenalmente.</li>
+        <li>El monto que quieras pagar.</li>
+        <li>Por cuánto tiempo quieres pagar.</li>
+        <li>El momento en el que deseas recibir tu unitanda.</li>
+      </ul><br>
+      Los números habilitados dependen de tu historial con Tandamos.
+    </p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo descargo Tandamos?</h2>
+    </div>
+    <p><a href="">Click aquí para descargar la aplicación</a> de la Google Play Store (Android).</p>
+  </section>
+
+  <section id="ingreso" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo ser parte de Tandamos?</h2>
+    </div>
+    <p>En Tandamos somos una comunidad restringida que se protege. Para ser parte de Tandamos no hace falta tener historial crediticio ni comprobante de ingresos, pero sí la invitación de un amigo.<br><br>
+      Hay dos formas de ingresar:<br>
+      <ul>
+        <li>Recibir un código de invitación de un amigo que ya está dentro de Tandamos.</li>
+        <li>Si no tienes el código de invitación, puedes compartir tus contactos para que busquemos a tus amigos dentro de Tandamos y les hagamos saber que necesitas una invitación. En cuanto un amigo te apruebe, te llegará una notificación.</li>
+      </ul>
+    </p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Qué documentos se solicitan para entrar a Tandamos?</h2>
+    </div>
+    <p>Los documentos requeridos son:<br>
+      <ul>
+        <li>INE o Pasaporte.</li>
+        <li>Comprobante de domicilio: recibo de luz, gas, agua, teléfono o estado de cuenta. Debe ser de los últimos tres meses. Puede no estar a tu nombre.</li>
+      </ul>
+    </p>
+  </section>
+
+  <section id="pagos" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo se hacen los pagos?</h2>
+    </div>
+    <p>Los pagos se pueden hacer por:<br>
+      <ul>
+        <li>Transferencia bancaria</li>
+        <li>Depósito bancario</li>
+        <li>CODI</li>
+      </ul><br>
+      También tienes la opción de adelantar pagos.<br>
+    </p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo recibo el dinero de mi unitanda?</h2>
+    </div>
+    <p>Para recibir tu dinero debes proporcionarnos el número de tu tarjeta de débito y el nombre del banco.
+    </p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Qué pasa si me restraso en un pago?</h2>
+    </div>
+    <p>Con Tandamos tendrás la posibilidad de diferir un pago sin costo adicional, por única vez.  En una segunda oportunidad, la comisión del pago se duplicaría.</p>
+  </section>
+
+  <section id="comision" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo se aplica la comisión?</h2>
+    </div>
+    <p>La comisión se aplica dependiendo del número que elijas. A mayor número, menor comisión.<br><br>
+    Por ejemplo, si decides armar tu unitanda de la siguiente manera:<br>
+    - Pagos semanales de $500 pesos durante 6 semanas.<br><br>
+    Las comisiones quedarían así:
+
+               Comisión      Tanda       Total a pagar
+Número  semanal     semanal       semanal
+     1            59             500               559
+     2            49             500               549
+     3            39             500               539
+     4            29             500               529
+     5            19             500               519
+     6              0             500               500
+
+
+Aclaración: los números se habilitan dependiendo de tu historial con Tandamos.
+
+  </p>
+  </section>
+
+  <section id="seguridad" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Qué tan seguro es Tandamos?</h2>
+    </div>
+    <p>Tandamos es una compañía legalmente constituída que cumple con la Ley de Instituciones de Crédito mexicanas y con las regulaciones vigentes de prevención de lavado de dinero exigidas por el SAT. También nos regimos por las normativas exigidas por la Profeco (Procuraduría Federal del Consumidor).
+    </p><br>
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Cómo se protegen mis datos?</h2>
+    </div>
+  </section>
+
+  <section id="ayuda" class="tabcontent p-body line-height">
+    <div class="tabcontent-flex">
+      <img src="images/dedo.svg" alt="">
+      <h2>¿Qué hago si tengo un problema?</h2>
+    </div>
+    <p>A través de Chicharito, nuestro asistente virtual, podrás hacernos llegar tu problema. Lo trataremos de resolver en menos de 48 horas.
+    </p>
+    <a href="#contact" class="btn btn-light">Contáctanos</a>
+  </section>
+
+  <p class="p-body">¿Tienes más preguntas? Escríbenos a <strong>info@tandamos.com</strong></p>
+
+  <footer class="p-body center">
+    <div class="flex">
+      <a href="https://www.facebook.com/tandamos" target="_blank"><img src="images/fb-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.instagram.com/tandamos/" target="_blank"><img src="images/IG-logo.png" alt="Facebook logo"></a>
+      <a href="https://www.linkedin.com/company/tandamos/" target="_blank"><img src="images/linkedin-logo.png" alt="Facebook logo"></a>
+    </div>
+    <div class="who-box">
+      <p class="little-text">Contacto</p>
+      <p class="little-text"><strong>info@tandamos.com</strong></p><br>
+    </div>
+    <div class="who-box">
+      <p class="little-text">Horario</p>
+      <p class="little-text"><strong>Lunes a viernes de 9:00 a 18:00 hrs</strong></p><br>
+      <p class="little-text"><strong>Prol. Moliere 480, Polanco, CDMX</strong></p><br>
+    </div>
+    <p class="little-text center">Copyright © 2021 Tandamos. All Rights Reserved.</p>
+  </footer>
+</body>
+<script src="js/qa.js"></script>
+<script src="js/modal-menu.js"></script>
+</html>

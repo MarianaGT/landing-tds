@@ -1,0 +1,603 @@
+:root {
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: 'Baloo Chettan 2', cursive;
+  --yellow: #FEEC72;
+  --light-yellow: #FFF5B8;
+  --pink: #FF7ABC;
+  --light-pink: #FFA2D0;
+  --green: #32E27C;
+  --light-green: #C1F6D8;
+  --blue: #6685F2;
+  --light-blue: #88A2FF;
+  --lighter-blue: #E7F9FF;
+  --charcoal: #263238;
+  --primary-blue: #2F1FE8;
+  --lilac: #ECCEFF;
+}
+
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+h1, h2, .tablinks {
+  font-family: var(--secondary-font);
+}
+
+h1 {
+  font-size: 2.7em;
+  line-height: 1.2em;
+}
+
+h3, strong {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.line-height {
+  line-height: 1.5em;
+}
+
+.little-text {
+  font-size: 0.8em;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.white {
+  color:  white;
+}
+
+.blue {
+  color: var(--primary-blue);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.light-green {
+  color: var(--light-green);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.charcoal {
+  color: var(--charcoal);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-pink {
+  background-color: var(--light-pink);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-lighter-blue {
+  background-color: var(--lighter-blue);
+}
+
+.bg-lilac {
+  background-color: var(--lilac);
+}
+
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}
+
+.p-body, .p-1 {
+  padding: 1em;
+}
+
+.pl-1 {
+  padding-left: 1em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 30px;
+  max-width: 8em;
+}
+
+.btn-dark {
+  display: block;
+  font-family: var(--secondary-font);
+  color: var(--yellow);
+  line-height: 1em;
+  background-color: var(--charcoal);
+  font-size: 1.5em;
+  box-shadow: 3px 3px 4px #d6d6d6;
+  margin: 0 auto;
+}
+
+.btn-light {
+  font-family: var(--primary-font);
+  color: white;
+  background-color: var(--primary-blue);
+  font-size: 1.2em;
+  margin: 1em auto;
+}
+
+.icon {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 0.5em;
+  margin: 1em;
+}
+
+.icon img {
+  height: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  margin: 1em 2em 1em 1em;
+}
+
+.icon-menu {
+  display: inline-block;
+  height: 48px;
+  padding-right: 1em;
+}
+
+nav a {
+  display: none;
+}
+
+/* Modal menu */
+.material-icons.md-48 { font-size: 48px; }
+
+.navlink {
+  line-height: 3em;
+}
+
+.navlink:hover {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.3em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 5em;
+  text-align: center;
+}
+
+.close {
+  float: right;
+}
+
+.close:hover, .menu:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Main */
+.main h1 {
+  padding-top: 1em;
+}
+
+.main {
+  background-color: var(--lilac);
+  background-image: linear-gradient(to bottom, rgba(236, 205, 252, 0.62), rgba(236, 205, 252, 0.62)),
+    url('../images/tanderos-sm.png');
+  height: 600px;
+}
+
+.main h3 {
+  margin-top: -2em;
+}
+
+.benefit {
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+.benefits-grid {
+  display: none;
+}
+
+/*Community*/
+#community {
+  background-image: url("../images/bg-green.svg");
+/*
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+}
+
+.testimonial-pic {
+  height: 180px;
+}
+
+
+/*How*/
+#how {
+  background-image: url("../images/bg-how.png");
+}
+
+#how span {
+  border-radius: 50%;
+  padding: 0.7em 1em;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-left: 0.3em;
+}
+
+.how-grid {
+  display: none;
+}
+
+.cellphone {
+  display: block;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.text-spacing {
+  letter-spacing: 0.1em;
+}
+
+/*Who*/
+#who {
+  background-image: url("../images/bg-pink.svg");
+}
+
+.who-box {
+  line-height: 0.5em;
+}
+
+.who-text h3 {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.equipo-pic {
+  width: 90%;
+}
+
+/*Contact*/
+input[type=text] {
+  font-family: var(--primary-font);
+  border-color: var(--blue);
+  padding: 0.8em;
+  width: 90%;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=submit] {
+  display: block;
+  border: none;
+  font-family: var(--primary-font);
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 30px;
+  font-size: 1em;
+  width: 70%;
+}
+
+/*Coming soon*/
+.coming-soon-flex {
+  padding-bottom: 2em;
+}
+
+.coming-soon {
+  background-color: var(--charcoal);
+}
+
+.coming-soon img {
+  width: 160px;
+}
+
+/*Footer*/
+footer img {
+  height: 40px;
+  margin: 0.5em;
+}
+
+/* QA */
+/* Style tab */
+
+.qa-title {
+  padding-top: 1em;
+
+}
+
+.tab {
+  overflow: hidden;
+  text-align: center;
+}
+
+.tablinks {
+  font-size: 1.2em;
+}
+
+/* Style tab buttons */
+.tab button {
+  background-color: var(--green);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin: 0.2em;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--blue);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+  background-color: var(--primary-blue);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent h2 {
+  margin-left: 0.5em;
+}
+
+.tabcontent-flex {
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    display: flex;
+  }
+
+  nav img {
+    width: 200px;
+    margin: 1em 2em 1em 1em;
+  }
+
+  nav a {
+    display: inline;
+    text-decoration: none;
+    color: var(--charcoal);
+    margin: 2em 1em;
+  }
+
+  nav a:last-child {
+    margin-right: 3em;
+  }
+
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  nav a:active {
+    color: var(--primary-blue);
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.7em;
+    margin-bottom: -0.3em;
+  }
+
+  .p-body {
+    padding: 2em;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    height: 700px;
+  }
+
+  .main h3 {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+  }
+
+  .main-pic {
+    background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.10), rgba(47, 31, 232, 0.10)),
+    url('../images/tanderos-sm-bg.png');
+    width: 100%;
+  }
+
+  .benefits-grid, .community-grid, .who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  #community h1 {
+    padding-bottom: 1em;
+  }
+
+  .community-box {
+    width: 90%;
+  }
+
+  .how-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  .cel-box {
+    margin: 0 auto;
+  }
+
+  .cel-box:hover {
+    transform: scale(1.1);
+  }
+
+  .cellphone {
+    padding-top: 3em;
+/*    height: 500px;*/
+  }
+
+  .who-text {
+    max-width: 80%;
+    font-size: 1.2em;
+  }
+
+  .equipo-pic {
+    padding-top: 3em;
+    width: 60%;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .coming-soon-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .coming-soon-flex h2 {
+    margin-right: 2em;
+  }
+
+  .qa-title {
+    padding: 1em;
+  }
+
+  .tab button {
+    padding: 14px 30px;
+  }
+
+  .tablinks {
+    font-size: 1.5em;
+  }
+
+  .tabcontent {
+    padding: 1em 8em;
+  }
+}
+
+
