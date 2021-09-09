@@ -154,30 +154,23 @@ h4 {
   text-align: center;
   text-decoration: none;
   border: none;
-  border-radius: 30px;
   max-width: 8em;
+}
+
+.btn:hover {
+  background-color: var(--charcoal);
 }
 
 .btn-lg {
   display: block;
   padding: 1em 2em;
   font-size: 1.2em;
+  border-radius: 40px;
 }
 
 .btn-sm {
-  padding: 0.5em 1em;
-}
-
-.icon {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  padding: 0.5em;
-  margin: 1em;
-}
-
-.icon img {
-  height: 20px;
+  padding: 0.7em 1.5em;
+  border-radius: 60px;
 }
 
 .flex {
@@ -276,7 +269,7 @@ nav a {
   background-color: var(--lilac);
   background-image: linear-gradient(to bottom, rgba(236, 205, 252, 0.62), rgba(236, 205, 252, 0.62)),
     url('../images/tanderos-sm.png');
-  height: 600px;
+  height: 500px;
 }
 
 .main h3 {
@@ -319,10 +312,14 @@ nav a {
 
 #how span {
   border-radius: 50%;
-  padding: 0.7em 1em;
+  padding: 0.3em 0.7em;
   font-weight: bold;
   opacity: 0.9;
   margin-left: 0.3em;
+}
+
+#how span:first-child {
+  padding: 0.3em 0.8em;
 }
 
 .how-grid {
@@ -384,6 +381,11 @@ input[type=submit] {
   width: 70%;
 }
 
+#contact img {
+  display: block;
+  margin: 0 auto;
+}
+
 /*Coming soon*/
 .coming-soon-flex {
   padding-bottom: 2em;
@@ -393,8 +395,15 @@ input[type=submit] {
   background-color: var(--charcoal);
 }
 
-.coming-soon img {
-  width: 160px;
+.chat img {
+  height: 30px;
+}
+
+.chat a {
+  font-family: var(--secondary-font);
+  font-size: 1.3em;
+  text-decoration: none;
+/*  border-bottom: solid 1px;*/
 }
 
 /*Footer*/
@@ -483,7 +492,7 @@ footer img {
   }
 
   nav a:hover {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   nav a:active {
@@ -504,12 +513,15 @@ footer img {
   }
 
   .main {
-    display: flex;
+/*    display: flex;
     justify-content: space-evenly;
+    background-image: none;*/
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-image: none;
     margin: 0;
     padding: 0;
-    height: 700px;
   }
 
   .main h3 {
@@ -528,6 +540,8 @@ footer img {
   .main-pic {
     background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.10), rgba(47, 31, 232, 0.10)),
     url('../images/tanderos-sm-bg.png');
+    background-size: cover;
+    background-position: center;
     width: 100%;
   }
 
@@ -579,8 +593,9 @@ footer img {
   }
 
   .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
   }
 
   #contact form {
