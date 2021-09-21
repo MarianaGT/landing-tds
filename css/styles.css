@@ -146,10 +146,14 @@ h4 {
   padding-bottom: 2em;
 }
 
+.w-100 {
+  width: 80%;
+}
+
 .btn {
   font-family: var(--primary-font);
-  color: white;
-  background-color: var(--primary-blue);
+  color: var(--charcoal);
+  background-color: var(--green);
   margin: 1em auto;
   text-align: center;
   text-decoration: none;
@@ -158,7 +162,7 @@ h4 {
 }
 
 .btn:hover {
-  background-color: var(--charcoal);
+  background-color: var(--light-green);
 }
 
 .btn-lg {
@@ -190,6 +194,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -228,8 +233,8 @@ nav a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: var(--lilac);
-  background-image: linear-gradient(to bottom, rgba(236, 205, 252, 0.70), rgba(236, 205, 252, 0.70)),
+  background-color: var(--lighter-blue);
+  background-image: linear-gradient(to bottom, rgba(231, 249, 255, 0.70), rgba(231, 249, 255, 0.70)),
     url('../images/logo.png');
   background-size: contain;
   background-position: center;
@@ -262,14 +267,22 @@ nav a {
 
 /* Main */
 .main h1 {
-  padding-top: 1em;
+
 }
 
 .main {
-  background-color: var(--lilac);
-  background-image: linear-gradient(to bottom, rgba(236, 205, 252, 0.62), rgba(236, 205, 252, 0.62)),
-    url('../images/tanderos-sm.png');
-  height: 500px;
+  background-color: var(--blue);
+/*  height: 500px;*/
+}
+
+.alcancia {
+  display: block;
+  margin: 4.5em auto -1em auto;
+  height: 200px;
+}
+
+.tanderos {
+  display: none;
 }
 
 .main h3 {
@@ -303,11 +316,17 @@ nav a {
   margin-top: -1.3em;
 }
 
+.community-logo {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+}
+
 
 /*How*/
 #how {
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)),
-  url('../images/logo.png');
+/*  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)),
+  url('../images/logo.png');*/
 }
 
 #how span {
@@ -316,6 +335,11 @@ nav a {
   font-weight: bold;
   opacity: 0.9;
   margin-left: 0.3em;
+}
+
+#how h3 {
+  margin: -1em 0 2em 0;
+  font-weight: 300;
 }
 
 #how span:first-child {
@@ -468,6 +492,9 @@ footer img {
 }
 
 @media only screen and (min-width: 600px) {
+  .main img {
+
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -513,15 +540,24 @@ footer img {
   }
 
   .main {
-/*    display: flex;
-    justify-content: space-evenly;
-    background-image: none;*/
-    height: 700px;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: none;
     margin: 0;
     padding: 0;
+    position: relative;
+  }
+
+  .tanderos {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .alcancia {
+    display: none;
   }
 
   .main h3 {
@@ -538,11 +574,21 @@ footer img {
   }
 
   .main-pic {
-    background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.10), rgba(47, 31, 232, 0.10)),
-    url('../images/tanderos-sm-bg.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+ /*   background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.10), rgba(47, 31, 232, 0.10)),
+    url('../images/tanderos.png');*/
+    /*background-size: cover;*/
+/*    background-position: center;
+    width: 100%;*/
+  }
+
+  .phrase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em 0;
+  }
+
+  .phrase {
+    border-radius: 70% 40% / 30% 80%;;
   }
 
   .benefits-grid, .community-grid, .who-grid {
@@ -561,6 +607,10 @@ footer img {
 
   #how {
     background-size: contain;
+  }
+
+  #how h3 {
+    margin: 1.5em 0 -1.2em 0;
   }
 
   .how-grid {
@@ -590,6 +640,10 @@ footer img {
   .equipo-pic {
     padding-top: 3em;
     width: 60%;
+  }
+
+  #contact h1 {
+    margin-bottom: 0.3em;
   }
 
   .contact-grid {
