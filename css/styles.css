@@ -518,6 +518,7 @@ footer img {
 
   .phrase-grid h2 {
     font-size: 2em;
+    margin: auto 0;
   }
 
   .phrase {
@@ -632,5 +633,9 @@ footer img {
 
   .main-content {
     padding: 1.5em 0.5em 1.5em 3em;
+  }
+
+  .line-break {
+    display: block;
   }
 }
