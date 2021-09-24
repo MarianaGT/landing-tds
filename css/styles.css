@@ -388,8 +388,7 @@ footer img {
 }
 
 /* QA */
-/* Style tab */
-
+/* tab */
 .qa-title {
   padding-top: 1em;
 }
@@ -403,7 +402,7 @@ footer img {
   font-size: 1.2em;
 }
 
-/* Style tab buttons */
+/* tab button */
 .tab button {
   background-color: var(--green);
   border: none;
@@ -415,18 +414,16 @@ footer img {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: var(--blue);
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   color: white;
   background-color: var(--primary-blue);
 }
 
-/* Style the tab content */
+/*tab content */
 .tabcontent {
   display: none;
   border: 1px solid #ccc;
@@ -439,6 +436,11 @@ footer img {
 
 .tabcontent-flex {
   display: flex;
+}
+
+/* Privacy */
+.privacy {
+  padding-top: 4em;
 }
 
 @media only screen and (min-width: 992px) {
@@ -609,6 +611,10 @@ footer img {
 
   .tabcontent {
     padding: 1em 8em;
+  }
+
+  .privacy {
+    padding-top: 5em;
   }
 }
 
