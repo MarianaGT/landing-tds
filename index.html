@@ -1,266 +1,647 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tandamos</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/carousel.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="navlinks bg-lighter-blue">
-    <img class="logo" src="images/logo.svg" alt="Tandamos logo">
-    <div>
-      <a href="#how">Cómo funciona</a>
-      <a href="#who">Quiénes somos</a>
-      <a href="qa.html">Preguntas frecuentes</a>
-      <a href="#contact" class="btn btn-sm">Descarga</a>
-    </div>
-    <img id="menuBtn" class="icon-menu" src="images/icon-menu.svg" alt="">
-  </nav>
-  <div id="menuModal" class="modal bg-center">
-    <img class="icon-menu close" src="images/icon-menu.svg" alt="">
-    <div class="modal-content">
-      <a href="qa.html">Preguntas frecuentes</a><br>
-    </div>
-  </div>
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Baloo Chettan 2', cursive;
+  --yellow: #FEEC72;
+  --light-yellow: #FFF5B8;
+  --pink: #FF7ABC;
+  --light-pink: #FFA2D0;
+  --green: #32E27C;
+  --light-green: #C1F6D8;
+  --blue: #6685F2;
+  --light-blue: #88A2FF;
+  --lighter-blue: #E7F9FF;
+  --charcoal: #263238;
+  --primary-blue: #2F1FE8;
+  --lilac: #ECCEFF;
+}
 
-  <section class="p-body main bg-center">
-    <div class="main-content">
-      <h1 class="center green">Como una tanda, pero sin grupos.</h1> <br>
-      <h3 class="center line-height">Es en tus términos; entre tú y Tandamos.</h3>
-      <a href="#contact" class="btn btn-lg">Descarga</a>
-    </div>
-    <div class="main-pic">
-    </div>
-  </section>
 
-  <section id="benefits" class="p-body line-height">
-    <h1 class="center">Tus beneficios</h1>
-     <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides1 fade benefit">
-        <img  src="images/descanso.svg" alt="">
-        <h2>Paz mental</h2>
-        <p>Recibe el dinero cuando te toca, sin lidiar con otras personas ni riesgo a que te queden mal.</p>
-      </div>
-      <div class="mySlides1 fade benefit">
-        <img src="images/celular.svg" alt="">
-        <h2>Muy fácil</h2>
-        <p>Armar tu unitanda en menos de 5 minutos desde tu celular: sin depender de un grupo y en tus términos.</p>
-      </div>
-      <div class="mySlides1 fade benefit">
-        <img src="images/monedas.svg" alt="">
-        <h2>Para todos y todas</h2>
-        <p>No solicitamos historial crediticio, ni comprobante de ingresos. Todos merecemos servicios financieros de calidad.</p>
-      </div>
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1,0)"><img src="images/previous.png" alt="previous slide"></a>
-      <a class="next" onclick="plusSlides(1,0)"><img src="images/forward.png" alt="next slide"></a>
-    </div>
-    <br>
+body {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: var(--charcoal);
+  margin: 0;
+}
 
-    <div class="benefits-grid">
-      <div class="benefit">
-        <img src="images/descanso.svg" alt="">
-        <h2>Paz mental</h2>
-        <p>Recibe el dinero cuando te toca, sin lidiar con otras personas ni riesgo a que te queden mal.</p>
-      </div>
-      <div class="benefit">
-        <img src="images/celular.svg" alt="">
-        <h2>Muy fácil</h2>
-        <p>Armar tu unitanda en menos de 5 minutos desde tu celular: sin depender de un grupo y en tus términos.</p>
-      </div>
-      <div class="benefit">
-        <img src="images/calendario.svg" alt="">
-        <h2>Para todos y todas</h2>
-        <p>No solicitamos historial crediticio, ni comprobante de ingresos. Todos merecemos servicios financieros de calidad.</p>
-      </div>
-    </div>
-  </section>
+p {
+  font-size: 1.1em;
+}
 
-  <section id="community" class="p-body bg-cover bg-center line-height">
-    <h1 class="center">Qué dicen los pioneros y pioneras</h1>
-    <div class="community-grid pb-2">
-      <div class="flex flex-column pb-2">
-        <img src="images/testimonio-1.png" alt="Foto de participante en tanda" class="testimonial-pic">
-        <div class="community-box">
-          <p><img src="images/icon-quote.png" alt="quote">Tandamos es práctico y sencillo.
-          La verdad ha sido una experiencia muy grata. La atención por el chat es rápida.
-          Como ya lo probé y me gustó, lo he recomendado a familiares y amigos.
-          Sería bueno tener tandas más largas, fuera de eso todo excelente.
-          </p>
-          <span class="right">Ana Rosa Martínez</span>
-        </div>
-      </div>
-      <div class="flex flex-column pb-2">
-        <img src="images/testimonio-3.png" alt="Foto de participante en tanda" class="testimonial-pic">
-        <div class="community-box">
-          <p><img src="images/icon-quote.png" alt="quote">Tandamos no te pone tantos peros.
-            Me gustó que tienes más posibilidades para elegir el número que en las tandas tradicionales.
-            Solicito crédito frecuentemente y son de las comisiones más bajas que he encontrado.
-          </p>
-          <span class="right">Alejandro Lázaro Espinoza</span>
-        </div>
-      </div>
-      <div class="flex flex-column pb-2">
-        <img src="images/testimonio-2.png" alt="Foto de participante en tanda" class="testimonial-pic">
-        <div class="community-box">
-          <p><img src="images/icon-quote.png" alt="quote">Tandamos es un gran apoyo.
-          Me pareció amigable de usar y que te recuerden los pagos semanales me sirvió mucho. Volvería a usar Tandamos”.
-          </p>
-          <span class="right">Isadora Otero</span>
-        </div>
-      </div>
-    </div>
-    <img class="community-logo" src="images/logo.png" alt="Tandamos logo">
-    <p><strong>Tandamos</strong> es una compañía legalmente constituída que cumple con la Ley de Instituciones de Crédito mexicana y con las regulaciones vigentes de prevención de lavado de dinero exigidas por el SAT. También nos regimos por las normativas exigidas por la Profeco (Procuraduría Federal del Consumidor).</p>
-  </section>
+h1, h2, .tablinks {
+  font-family: var(--secondary-font);
+}
 
-  <section class="phrase-grid">
-    <img class="w-100" src="images/dinero.png" alt="">
-    <h2 class="blue center phrase bg-lilac p-body">La tranquilidad de contar con un <span class="line-break">dinero extra cuando lo necesites.</span></h2>
-  </section>
+h1 {
+  font-size: 2.7em;
+  line-height: 1.2em;
+}
 
-  <section id="how" class="p-body">
-    <h1 class="center">Cómo funciona</h1>
-    <h3 class="center">Tú decides: cuánto dinero quieres juntar, cuánto pagar y cuándo recibir tu unitanda.</h3>
-     <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides2 fade flex">
-        <img src="images/cel-frecuencia2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-light-blue">1</span> Elige la <strong>frecuencia</strong> de tu pago</p>
-      </div>
-      <div class="mySlides2 fade flex">
-        <img src="images/cel-monto2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-green">2</span> Elige <strong>cuánto</strong> quieres pagar</p>
-      </div>
-      <div class="mySlides2 fade flex">
-        <img src="images/cel-duracion2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-pink">3</span> Elige la <strong>duración</strong> de tu unitanda</p>
-      </div>
-      <div class="mySlides2 fade flex">
-        <img src="images/cel-numero2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-yellow">4</span> Elige el <strong>número</strong> en el que quieres recibir tu unitanda. <br> La <strong>comisión</strong> depende del número que elijas.</p>
-      </div>
+h3, strong {
+  font-weight: 500;
+}
 
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1,1)"><img src="images/previous.png" alt="previous slide"></a>
-      <a class="next" onclick="plusSlides(1,1)"><img src="images/forward.png" alt="next slide"></a>
-    </div>
-    <br>
-    <br>
+h4 {
+  font-weight: 300;
+  line-height: 1.5em;
+}
 
-    <div class="how-grid">
-      <!-- Full-width images with number and caption text -->
-      <div class="cel-box">
-        <img src="images/cel-frecuencia2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-light-blue">1</span> Elige la <strong>frecuencia</strong> de tu pago</p>
-      </div>
-      <div class="cel-box">
-        <img src="images/cel-monto2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-green">2</span> Elige <strong>cuánto</strong> quieres pagar</p>
-      </div>
-      <div class="cel-box">
-        <img src="images/cel-duracion2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-pink">3</span> Elige la <strong>duración</strong> de tu unitanda</p>
-      </div>
-      <div class="cel-box">
-        <img src="images/cel-numero2.png" class="cellphone pb-2" alt="celular">
-        <p class="center"><span class="bg-yellow">4</span> Elige el <strong>número</strong> en el que quieres recibir tu unitanda. <br><br> La <strong>comisión</strong> depende del número que elijas.</p>
-      </div>
-    </div>
-  </section>
+.line-height {
+  line-height: 1.6em;
+}
 
-  <section id="who" class="p-body bg-cover bg-center pb-2">
-    <h1 class="center">Quiénes somos</h1>
-    <div class="flex flex-column">
-      <img src="images/equipo.png" alt="" class="equipo-pic">
-      <div class="who-text">
-        <p>Llevar las finanzas personales de forma exitosa, no es nada fácil. Sin ayuda, casi imposible. Tandamos quiere ser ese apoyo para que puedas cumplir tus metas y logres un bienestar financiero duradero.</p>
-        <p>Estamos decididos a ser la primera compañía de bienestar financiero en México verdaderamente accesible para todos. Te invitamos a mejorar la salud de tus finanzas, un paso a la vez.</p>
-      </div>
-    </div>
-    <div class="who-grid center pb-2">
-      <div class="who-box">
-        <p class="little-text"><strong>Ma. Alejandra González</strong></p>
-        <p class="little-text"><em>Fundadora y directora general</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Alexander Golding</strong></p>
-        <p class="little-text"><em>Fundador y director general</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Alejandro Gouveia</strong></p>
-        <p class="little-text"><em>Jefe de tecnología</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Marianela Longres</strong></p>
-        <p class="little-text"><em>Encargada de contenidos</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Yessibeth Cáceres</strong></p>
-        <p class="little-text"><em>Analista de producto</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Eduardo Pliego</strong></p>
-        <p class="little-text"><em>Desarrollador Backend</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Martín Smith</strong></p>
-        <p class="little-text"><em>Desarrollador Flutter</em></p>
-      </div>
-      <div class="who-box">
-        <p class="little-text"><strong>Mariana Galán</strong></p>
-        <p class="little-text"><em>Diseñadora UX</em></p>
-      </div>
-    </div>
-  </section>
+.little-text {
+  font-size: 0.8em;
+  line-height: 1em;
+}
 
-  <section id="contact" class="p-body pb-2 line-height bg-lighter-blue">
-    <h1 class="center">Comienza ya</h1>
-    <div class="contact-grid">
-      <img src="images/grupo.svg" alt="Comunidad Tandamos">
-      <p class="center">En pocas semanas podrás tener el dinero que necesitas.</p>
-    </div>
-    <a href="" class="btn btn-lg">Descarga</a>
-  </section>
+.center {
+  text-align: center;
+}
 
-  <section class="chicharito p-body white center">
-    <div class="chicharito-flex">
-      <div class="chat">
-        <span>Contacta a </span>
-        <a href='https://wa.me/528113183570' target='_blank' class="green">
-          CHICHARITO <img src="images/whatsapp.svg" alt="">
-        </a>
-        <span>nuestro asistente virtual si quieres saber más.</span>
-      </div>
-    </div>
-  </section>
+.right {
+  float: right;
+}
 
-  <footer class="p-body center">
-    <div class="flex">
-      <a href="https://www.facebook.com/tandamos" target="_blank"><img src="images/fb-logo.svg" alt="Facebook logo"></a>
-      <a href="https://www.instagram.com/tandamos/" target="_blank"><img src="images/IG-logo.svg" alt="Facebook logo"></a>
-      <a href="https://www.linkedin.com/company/tandamos/" target="_blank"><img src="images/linkedin-logo.svg" alt="Facebook logo"></a>
-    </div>
-    <div class="who-box">
-      <p class="little-text">Contacto</p>
-      <p class="little-text"><strong>info@tandamos.com</strong></p><br>
-    </div>
-    <div class="who-box">
-      <p class="little-text">Horario</p>
-      <p class="little-text"><strong>Lunes a viernes de 9:00 a 18:00 hrs</strong></p><br>
-      <p class="little-text"><strong>Prol. Moliere 480, Polanco, CDMX</strong></p><br>
-    </div>
-    <p class="little-text center">Copyright © 2021 Tecnologías para Todos SA de CV. All Rights Reserved.</p>
-  </footer>
-</body>
-<script src="js/carousel.js"></script>
-<script src="js/modal-menu.js"></script>
-</html>
+.white {
+  color:  white;
+}
+
+.blue {
+  color: var(--primary-blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+.light-green {
+  color: var(--light-green);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.charcoal {
+  color: var(--charcoal);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-pink {
+  background-color: var(--light-pink);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-lighter-blue {
+  background-color: var(--lighter-blue);
+}
+
+.bg-lilac {
+  background-color: var(--lilac);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-body, .p-1 {
+  padding: 1em;
+}
+
+.pl-1 {
+  padding-left: 1em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.pb-2 {
+  padding-bottom: 2em;
+}
+
+.w-100 {
+  width: 80%;
+}
+
+.btn {
+  font-family: var(--primary-font);
+  color: var(--charcoal);
+  background-color: var(--green);
+  margin: 1em auto;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  max-width: 8em;
+}
+
+.btn:hover {
+  background-color: var(--light-green);
+}
+
+.btn-lg {
+  display: block;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border-radius: 40px;
+}
+
+.btn-sm {
+  padding: 0.7em 1.5em;
+  border-radius: 60px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+  margin: 1em 2em 1em 1em;
+}
+
+.icon-menu {
+  display: inline-block;
+  height: 48px;
+  padding-right: 1em;
+}
+
+nav a {
+  display: none;
+}
+
+/* Modal menu */
+.navlink {
+  line-height: 3em;
+}
+
+.navlink:hover {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.3em;
+}
+
+.modal {
+  font-family: var(--secondary-font);
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--lighter-blue);
+  background-image: linear-gradient(to bottom, rgba(231, 249, 255, 0.70), rgba(231, 249, 255, 0.70)),
+    url('../images/logo.png');
+  background-size: contain;
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.modal-content a {
+  font-size: 1.5em;
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.close {
+  float: right;
+  padding-top: 0.35em;
+}
+
+.close:hover, .menu:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Main */
+.main {
+  background-color: var(--blue);
+  background-image: linear-gradient(to bottom, rgba(136, 162, 255, 0.70), rgba(136, 162, 255, 0.70)),
+    url('../images/tanderos-sm.png');
+}
+
+.main-content {
+  padding: 7em 0 5em 0;
+}
+
+.main h3 {
+  margin-top: -2em;
+}
+
+.benefit {
+  text-align: center;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+.benefits-grid {
+  display: none;
+}
+
+/*Community*/
+#community {
+  background-image: url("../images/bg-green.svg");
+}
+
+.testimonial-pic {
+  height: 180px;
+}
+
+.community-box {
+  margin-top: -1.3em;
+}
+
+.community-logo {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+}
+
+
+/*How*/
+#how span {
+  border-radius: 50%;
+  padding: 0.3em 0.7em;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-left: 0.3em;
+}
+
+#how h3 {
+  margin: -1em 0 2em 0;
+  font-weight: 300;
+}
+
+#how span:first-child {
+  padding: 0.3em 0.8em;
+}
+
+.how-grid {
+  display: none;
+}
+
+.cellphone {
+  display: block;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.text-spacing {
+  letter-spacing: 0.1em;
+}
+
+/*Who*/
+#who {
+  background-image: url("../images/bg-pink.svg");
+}
+
+.who-box {
+  line-height: 0.5em;
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.equipo-pic {
+  width: 90%;
+}
+
+/*Contact*/
+#contact img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Chicharito*/
+.chicharito-flex {
+  padding-bottom: 2em;
+}
+
+.chicharito {
+  background-color: var(--charcoal);
+}
+
+.chat img {
+  height: 30px;
+}
+
+.chat a {
+  font-family: var(--secondary-font);
+  font-size: 1.3em;
+  text-decoration: none;
+/*  border-bottom: solid 1px;*/
+}
+
+/*Footer*/
+footer img {
+  height: 40px;
+  margin: 0.5em;
+}
+
+/* QA */
+/* tab */
+.qa-title {
+  padding-top: 1em;
+}
+
+.tab {
+  overflow: hidden;
+  text-align: center;
+}
+
+.tablinks {
+  font-size: 1.2em;
+}
+
+/* tab button */
+.tab button {
+  background-color: var(--green);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin: 0.2em;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: var(--blue);
+}
+
+.tab button.active {
+  color: white;
+  background-color: var(--primary-blue);
+}
+
+/*tab content */
+.tabcontent {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent h2 {
+  margin-left: 0.5em;
+}
+
+.tabcontent-flex {
+  display: flex;
+}
+
+/* Privacy */
+.privacy {
+  padding-top: 4em;
+}
+
+@media only screen and (min-width: 992px) {
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    display: inline;
+    text-decoration: none;
+    color: var(--charcoal);
+    margin: 2em 1em;
+  }
+
+  nav a:last-child {
+    margin-right: 3em;
+  }
+
+  nav a:hover {
+    font-weight: 400;
+  }
+
+  nav a:active {
+    color: var(--primary-blue);
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: -0.3em;
+  }
+
+  .p-body {
+    padding: 2em;
+  }
+
+  .main {
+    height: 480px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main h3 {
+    margin: 0.5em;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0.5em 1.5em 3em;
+  }
+
+  .main-pic {
+    background-image: url('../images/tanderos_bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  .phrase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em 0;
+  }
+
+  .phrase-grid h2 {
+    font-size: 2em;
+    margin: auto 0;
+  }
+
+  .phrase {
+    border-radius: 70% 40% / 30% 80%;;
+  }
+
+  .benefits-grid, .community-grid, .who-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  #community h1 {
+    padding-bottom: 1em;
+  }
+
+  .community-box {
+    width: 90%;
+  }
+
+  #how {
+    background-size: contain;
+  }
+
+  #how h3 {
+    margin: 1.5em 0 -1.2em 0;
+  }
+
+  .how-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+
+  .cel-box {
+    margin: 0 auto;
+  }
+
+  .cel-box:hover {
+    transform: scale(1.1);
+  }
+
+  .cellphone {
+    padding-top: 3em;
+  }
+
+  .who-text {
+    max-width: 80%;
+    /*font-size: 1.1em;*/
+  }
+
+  .equipo-pic {
+    padding-top: 3em;
+    width: 60%;
+  }
+
+  #contact h1 {
+    margin-bottom: 0.3em;
+  }
+
+  .contact-grid {
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+
+  .chicharito-flex {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .chicharito-flex h2 {
+    margin-right: 2em;
+  }
+
+  .qa-title {
+    padding: 1em;
+  }
+
+  .tab button {
+    padding: 14px 30px;
+  }
+
+  .tablinks {
+    font-size: 1.5em;
+  }
+
+  .tabcontent {
+    padding: 1em 8em;
+  }
+
+  .privacy {
+    padding-top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.7em;
+  }
+
+  nav a {
+    font-size: 1.1em;
+  }
+
+  .main {
+    height: 600px;
+    padding: 0;
+  }
+
+  .main h3 {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+
+  .main-content {
+    padding: 1.5em 0.5em 1.5em 3em;
+  }
+
+  .line-break {
+    display: block;
+  }
+}
