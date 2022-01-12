@@ -280,13 +280,17 @@ nav {
   margin-top: -2em;
 }
 
-.benefit {
+.benefit, .value {
   text-align: center;
   padding: 1.5em;
   margin: 1em;
 }
 
-.benefits-grid {
+.value img {
+  height: 250px;
+}
+
+.benefits-grid, .values-grid {
   display: none;
 }
 
@@ -347,17 +351,22 @@ nav {
   background-image: url("../images/bg-pink.svg");
 }
 
-.who-box {
-  line-height: 0.5em;
+.who-main {
+  height: 380px;
+  margin: 0;
+  padding: 0;
 }
 
-.who-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.who-main h2 {
+  padding: 1em;
 }
 
-.equipo-pic {
-  width: 90%;
+.who-pic {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)),
+  url('../images/who001.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
 }
 
 /*Contact*/
@@ -443,6 +452,12 @@ footer img {
   padding-top: 4em;
 }
 
+.equipo-pic {
+  height: 180px;
+  width: 180px;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 992px) {
   nav {
     display: flex;
@@ -510,7 +525,6 @@ footer img {
 
   .main-pic {
     background-image: url('../images/tanderos_bg.png');
-    background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
   }
@@ -521,13 +535,19 @@ footer img {
     margin: 2em 0;
   }
 
-  .phrase-grid h2 {
+  .phrase-grid h2, .who-main h2 {
     font-size: 2em;
     margin: auto 0;
   }
 
   .phrase {
     border-radius: 70% 40% / 30% 80%;;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
   }
 
   .benefits-grid, .community-grid, .who-grid {
@@ -570,14 +590,24 @@ footer img {
     padding-top: 3em;
   }
 
+  /* Who */
+  .who-main {
+    height: 700px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .who-pic {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.70)),
+    url('../images/who001.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
   .who-text {
     max-width: 80%;
     /*font-size: 1.1em;*/
-  }
-
-  .equipo-pic {
-    padding-top: 3em;
-    width: 60%;
   }
 
   #contact h1 {
@@ -643,6 +673,10 @@ footer img {
 
   .main-content {
     padding: 1.5em 0.5em 1.5em 3em;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .line-break {
