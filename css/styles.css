@@ -634,7 +634,7 @@ footer img {
 
   /* Who */
   .who-main {
-    height: 700px;
+    height: 500px;
     margin: 0;
     padding: 0;
   }
@@ -644,6 +644,7 @@ footer img {
   }
 
   .who-mission h2 {
+    font-size: 2em;
     line-height: 1.5em;
   }
 
