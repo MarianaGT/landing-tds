@@ -633,6 +633,11 @@ footer img {
   }
 
   /* Who */
+  #who div{
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .who-main {
     height: 500px;
     margin: 0;
@@ -661,6 +666,11 @@ footer img {
 
   .equipo-box {
     margin: 2em 0.5em 0.5em 0.5em;
+  }
+
+  /* Work */
+  .position-title {
+    margin: 0.5em;
   }
 
   #contact h1 {
