@@ -759,6 +759,10 @@ footer img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .work-main {
+    height: 900px;
+  }
+
   .line-break {
     display: block;
   }
