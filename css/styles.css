@@ -362,7 +362,7 @@ nav {
   background-size: cover;
 }
 
-.who-main {
+.who-main, .work-main {
   height: 380px;
   margin: 0;
   padding: 0;
@@ -399,11 +399,11 @@ nav {
 
 /*Work*/
 .work-pic {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
-  url('../images/who.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url('../images/work.png');
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: contain;
+  background-size: cover;
 }
 
 .team-pic {
@@ -671,6 +671,12 @@ footer img {
   }
 
   /* Work */
+  .work-main {
+    height: 700px;
+    margin: 0;
+    padding: 0;
+  }
+
   .position-title {
     margin: 0.5em;
   }
