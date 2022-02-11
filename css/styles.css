@@ -276,8 +276,8 @@ nav {
 /* Main */
 .main {
   background-color: var(--blue);
-  background-image: linear-gradient(to bottom, rgba(136, 162, 255, 0.70), rgba(136, 162, 255, 0.70)),
-    url('../images/tanderos-sm.png');
+  background-image: linear-gradient(to bottom, rgba(0, 73, 229, 0.70), rgba(0, 73, 229, 0.70)),
+    url('../images/home.png');
 }
 
 .main-content {
@@ -286,6 +286,7 @@ nav {
 
 .main h3 {
   margin-top: -2em;
+  color: var(--lighter-blue);
 }
 
 .benefit, .value {
@@ -548,10 +549,6 @@ footer img {
     color: var(--primary-blue);
   }
 
-  .logo {
-    width: 200px;
-  }
-
   .icon-menu {
     display: none;
   }
@@ -568,7 +565,7 @@ footer img {
   .main {
     height: 480px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     background-image: none;
     margin: 0;
     padding: 0;
@@ -576,6 +573,7 @@ footer img {
 
   .main h3 {
     margin: 0.5em;
+    color: var(--charcoal);
   }
 
   .main-content {
@@ -587,9 +585,10 @@ footer img {
   }
 
   .main-pic {
-    background-image: url('../images/tanderos_bg.png');
+    background-image: url('../images/home.png');
     background-position: center bottom;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .phrase-grid {
