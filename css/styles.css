@@ -56,11 +56,14 @@ h4 {
 
 .little-text {
   font-size: 0.8em;
-  line-height: 1em;
 }
 
 .center {
   text-align: center;
+}
+
+.center-block {
+  margin: 0 auto;
 }
 
 .right {
@@ -154,10 +157,6 @@ h4 {
 
 .ml-2 {
   margin-left: 2em;
-}
-
-.w-100 {
-  width: 80%;
 }
 
 .btn {
@@ -400,7 +399,7 @@ nav {
 /*Work*/
 .work-pic {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-    url('../images/work.png');
+    url('../images/work.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -417,6 +416,18 @@ nav {
   margin: 0;
   display: block;
 }
+
+.quote-mandela {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.quote-mandela h2 {
+  font-size: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--blue);
+}
+
 
 /*Contact*/
 #contact img {
@@ -448,6 +459,10 @@ nav {
 footer img {
   height: 40px;
   margin: 0.5em;
+}
+
+.justify {
+  text-align: justify;
 }
 
 /* QA */
@@ -502,6 +517,11 @@ footer img {
 }
 
 @media only screen and (min-width: 992px) {
+
+  .w-80 {
+    width: 80%;
+  }
+
   nav {
     display: flex;
   }
@@ -656,7 +676,6 @@ footer img {
 
   .who-mission {
     margin: -3em auto 0 auto;
-    width: 80%;
   }
 
   .who-pic {
@@ -684,6 +703,11 @@ footer img {
   #contact h1 {
     margin-bottom: 0.3em;
     margin-top: 0em;
+  }
+
+  .quote-mandela {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .contact-grid {
