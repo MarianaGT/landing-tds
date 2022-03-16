@@ -63,6 +63,7 @@ h4 {
 }
 
 .center-block {
+  display: block;
   margin: 0 auto;
 }
 
@@ -195,6 +196,13 @@ h4 {
 
 .flex-column {
   flex-direction: column;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0.3em;
 }
 
 nav {
@@ -531,6 +539,31 @@ footer img {
   padding-top: 4em;
 }
 
+/* Tanda */
+.tanda-main {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url('../images/alcancia.png');
+  height: 600px;
+}
+
+.tanda-main h2 {
+  font-size: 2em;
+}
+
+.tanda-how {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+.tanda-card {
+  border: 5px var(--lilac-gray) solid;
+}
+
+.tanda-money {
+  margin-left: -2em;
+  width: 100%;
+}
+
 @media only screen and (min-width: 992px) {
 
   .w-80 {
@@ -620,7 +653,7 @@ footer img {
     border-radius: 70% 40% / 30% 80%;;
   }
 
-  .values-grid {
+  .values-grid, .tanda-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
@@ -702,6 +735,11 @@ footer img {
     margin: 2em 0.5em 0.5em 0.5em;
   }
 
+  #who .tanda-card {
+    width: 40%;
+    margin: 0 auto;
+  }
+
   /* Work */
   .work-main {
     height: 700px;
@@ -718,7 +756,7 @@ footer img {
     margin-top: 0em;
   }
 
-  .quote-mandela {
+  .quote-mandela, .tanda-membership-box {
     width: 50%;
     margin: 0 auto;
   }
