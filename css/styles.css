@@ -550,17 +550,13 @@ footer img {
   font-size: 2em;
 }
 
-.tanda-how {
-  display: inline;
-  padding: 0 0.5em;
-}
-
 .tanda-card {
-  border: 5px var(--lilac-gray) solid;
+  border-color: var(--lilac-gray);
+  border-style: solid;
+  border-width: 5px 5px 15px 15px;
 }
 
-.tanda-money {
-  margin-left: -2em;
+.tanda-how {
   width: 100%;
 }
 
@@ -805,6 +801,10 @@ footer img {
   .team-pic {
     margin-right: 1.5em;
   }
+
+  .tanda-how {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -840,5 +840,9 @@ footer img {
 
   .line-break {
     display: block;
+  }
+
+  .tanda-how {
+    width: 40%;
   }
 }
