@@ -541,7 +541,7 @@ footer img {
 
 /* Tanda */
 .tanda-main {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url('../images/alcancia.png');
   height: 600px;
 }
