@@ -12,6 +12,7 @@
   --lighter-blue: #E7F9FF;
   --charcoal: #263238;
   --primary-blue: #2F1FE8;
+  --purple: #6158e2;
   --lilac: #ECCEFF;
   --lilac-gray: #ebebf4;
 }
@@ -103,12 +104,16 @@ h4 {
   background-color: var(--light-yellow);
 }
 
-.bg-pink {
-  background-color: var(--light-pink);
+.bg-purple {
+  background-color: var(--purple);
 }
 
 .bg-green {
   background-color: var(--green);
+}
+
+.bg-light-green {
+  background-color:  var(--light-green);
 }
 
 .bg-blue {
@@ -288,7 +293,7 @@ nav {
     url('../images/home.png');
 }
 
-.main-content {
+.main-content, .tanda-content {
   padding: 7em 0 5em 0;
 }
 
@@ -540,10 +545,12 @@ footer img {
 }
 
 /* Tanda */
-.tanda-main {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+.tanda {
+  background-color: var(--purple);
+  background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.55), rgba(47, 31, 232, 0.55)),
     url('../images/alcancia.png');
   height: 600px;
+
 }
 
 .tanda-main h2 {
@@ -558,6 +565,15 @@ footer img {
 
 .tanda-how {
   width: 100%;
+}
+
+.tanda-membership-box img {
+  width: 40px;
+}
+
+.tanda-membership-box h3 {
+  margin-left: 0.5em;
+  line-height: 1em;
 }
 
 @media only screen and (min-width: 992px) {
@@ -605,7 +621,7 @@ footer img {
     padding: 2em;
   }
 
-  .main {
+  .main, .tanda {
     height: 480px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -619,7 +635,7 @@ footer img {
     color: var(--charcoal);
   }
 
-  .main-content {
+  .main-content, .tanda-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,6 +648,14 @@ footer img {
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .tanda-pic {
+    background-image: url('../images/alcancia.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1em;
   }
 
   .phrase-grid {
@@ -752,7 +776,7 @@ footer img {
     margin-top: 0em;
   }
 
-  .quote-mandela, .tanda-membership-box {
+  .quote-mandela {
     width: 50%;
     margin: 0 auto;
   }
@@ -804,6 +828,19 @@ footer img {
 
   .tanda-how {
     width: 50%;
+  }
+
+  .tanda-membership-box img {
+    width: 60px;
+    padding: 0.2em;
+  }
+
+  .tanda-membership-box h3 {
+    font-size: 2em;
+  }
+
+  .tanda-compras {
+    width: 400px;
   }
 }
 
