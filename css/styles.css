@@ -92,6 +92,10 @@ h4 {
   color: var(--light-blue);
 }
 
+.lighter-blue {
+  color: var(--lighter-blue);
+}
+
 .charcoal {
   color: var(--charcoal);
 }
@@ -161,8 +165,17 @@ h4 {
   padding-bottom: 2em;
 }
 
+.mt-3 {
+  margin-top: 3em;
+}
+
 .ml-2 {
   margin-left: 2em;
+}
+
+.h-scroll {
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .btn {
@@ -582,36 +595,6 @@ footer img {
     width: 80%;
   }
 
-  nav {
-    display: flex;
-  }
-
-  .navlinks {
-    display: inline;
-  }
-
-  .navlinks a {
-    margin: 2em 1em;
-    color: var(--charcoal);
-    text-decoration: none;
-  }
-
-  .navlinks:last-child {
-    margin-right: 3em;
-  }
-
-  .navlinks a:hover {
-    font-weight: 400;
-  }
-
-  .navlinks a:active {
-    color: var(--primary-blue);
-  }
-
-  .icon-menu {
-    display: none;
-  }
-
   h1 {
     font-size: 3em;
     margin-bottom: -0.3em;
@@ -845,6 +828,37 @@ footer img {
 }
 
 @media only screen and (min-width: 1200px) {
+
+   nav {
+    display: flex;
+  }
+
+  .navlinks {
+    display: inline;
+  }
+
+  .navlinks a {
+    margin: 2em 0.5em;
+    color: var(--charcoal);
+    text-decoration: none;
+  }
+
+  .navlinks:last-child {
+    margin-right: 3em;
+  }
+
+  .navlinks a:hover {
+    font-weight: 400;
+  }
+
+  .navlinks a:active {
+    color: var(--primary-blue);
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
   h1 {
     font-size: 3.7em;
   }
