@@ -304,6 +304,7 @@ nav {
   background-color: var(--blue);
   background-image: linear-gradient(to bottom, rgba(0, 73, 229, 0.70), rgba(0, 73, 229, 0.70)),
     url('../images/home.png');
+  height: 480px;
 }
 
 .main-content, .tanda-content {
@@ -561,12 +562,12 @@ footer img {
 .tanda {
   background-color: var(--purple);
   background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.55), rgba(47, 31, 232, 0.55)),
-    url('../images/alcancia.png');
+    url('../images/productos.png');
+  background-size: contain;
   height: 600px;
-
 }
 
-.tanda-main h2 {
+.tanda-main h2, .tanda-content h2 {
   font-size: 2em;
 }
 
@@ -589,7 +590,7 @@ footer img {
   line-height: 1em;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
    nav {
     display: flex;
   }
@@ -634,7 +635,6 @@ footer img {
   }
 
   .main, .tanda {
-    height: 480px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: none;
@@ -663,11 +663,12 @@ footer img {
   }
 
   .tanda-pic {
-    background-image: url('../images/alcancia.png');
+    background-image: url('../images/productos.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 1em;
+    margin-right: 1em;
   }
 
   .phrase-grid {
