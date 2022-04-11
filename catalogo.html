@@ -1,924 +1,116 @@
-:root {
-  --primary-font: 'Poppins', sans-serif;
-  --secondary-font: 'Baloo Chettan 2', cursive;
-  --yellow: #FEEC72;
-  --light-yellow: #FFF5B8;
-  --pink: #FF7ABC;
-  --light-pink: #FFA2D0;
-  --green: #32E27C;
-  --light-green: #C1F6D8;
-  --blue: #6685F2;
-  --light-blue: #88A2FF;
-  --lighter-blue: #E7F9FF;
-  --charcoal: #263238;
-  --primary-blue: #2F1FE8;
-  --purple: #6158e2;
-  --lilac: #ECCEFF;
-  --lilac-gray: #ebebf4;
-}
-
-
-body {
-  font-family: var(--primary-font);
-  font-weight: 300;
-  color: var(--charcoal);
-  margin: 0;
-}
-
-p {
-  font-size: 1.1em;
-}
-
-h1, h2, .tablinks {
-  font-family: var(--secondary-font);
-}
-
-h1 {
-  font-size: 2.7em;
-  line-height: 1.2em;
-}
-
-#how h1, #who h1, #contact h1 {
-  padding-top: 0.5em;
-}
-
-h3, strong {
-  font-weight: 500;
-}
-
-h4 {
-  font-weight: 300;
-  line-height: 1.5em;
-}
-
-.line-height {
-  line-height: 1.6em;
-}
-
-.little-text {
-  font-size: 0.8em;
-}
-
-.center {
-  text-align: center;
-}
-
-.center-block {
-  display: block;
-  margin: 0 auto;
-}
-
-.right {
-  float: right;
-}
-
-.white {
-  color:  white;
-}
-
-.blue {
-  color: var(--primary-blue);
-}
-
-.green {
-  color: var(--green);
-}
-
-.light-green {
-  color: var(--light-green);
-}
-
-.light-blue {
-  color: var(--light-blue);
-}
-
-.lighter-blue {
-  color: var(--lighter-blue);
-}
-
-.charcoal {
-  color: var(--charcoal);
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.bg-light-yellow {
-  background-color: var(--light-yellow);
-}
-
-.bg-purple {
-  background-color: var(--purple);
-}
-
-.bg-green {
-  background-color: var(--green);
-}
-
-.bg-light-green {
-  background-color:  var(--light-green);
-}
-
-.bg-blue {
-  background-color: var(--blue);
-}
-
-.bg-light-blue {
-  background-color: var(--light-blue);
-}
-
-.bg-lighter-blue {
-  background-color: var(--lighter-blue);
-}
-
-.bg-lilac {
-  background-color: var(--lilac);
-}
-
-.bg-lilac-gray {
-  background-color: var(--lilac-gray);
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.p-body, .p-1 {
-  padding: 1em;
-}
-
-.pl-1 {
-  padding-left: 1em;
-}
-
-.p-2 {
-  padding: 2em;
-}
-
-.pb-2 {
-  padding-bottom: 2em;
-}
-
-.mt-3 {
-  margin-top: 3em;
-}
-
-.ml-2 {
-  margin-left: 2em;
-}
-
-.h-scroll {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.btn {
-  font-family: var(--primary-font);
-  color: var(--charcoal);
-  background-color: var(--green);
-  margin: 1em auto;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  max-width: 8em;
-}
-
-.btn:hover, .tab button.active {
-  color: white;
-  background-color: var(--primary-blue);
-}
-
-.btn-lg {
-  display: block;
-  padding: 1em 2em;
-  font-size: 1.2em;
-  border-radius: 40px;
-}
-
-.btn-sm {
-  padding: 0.7em 1.5em;
-  border-radius: 60px;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: 0.3em;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.logo {
-  width: 150px;
-  margin: 1em 2em 1em 1em;
-}
-
-.icon-menu {
-  display: inline-block;
-  height: 48px;
-  padding-right: 1em;
-}
-
-.navlinks {
-  display: none;
-}
-
-/* Modal menu */
-.navlink {
-  line-height: 3em;
-}
-
-.navlink:hover {
-  font-weight: 700;
-  border-bottom: 2px solid white;
-  padding-bottom: 0.3em;
-}
-
-.modal {
-  font-family: var(--secondary-font);
-  display: none;
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: var(--lighter-blue);
-  background-image: linear-gradient(to bottom, rgba(231, 249, 255, 0.70), rgba(231, 249, 255, 0.70)),
-    url('../images/logo.png');
-  background-size: contain;
-}
-
-.modal-content {
-  margin: 15% auto;
-  padding: 4em 2em;
-  text-align: center;
-}
-
-.modal-content a {
-  font-size: 1.5em;
-  color: var(--primary-blue);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 3em;
-}
-
-.close {
-  float: right;
-  padding-top: 0.35em;
-}
-
-.close:hover, .menu:hover {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Main */
-.main {
-  background-color: var(--blue);
-  background-image: linear-gradient(to bottom, rgba(0, 73, 229, 0.70), rgba(0, 73, 229, 0.70)),
-    url('../images/home.png');
-  height: 480px;
-}
-
-.main-content, .tanda-content {
-  padding: 7em 0 5em 0;
-}
-
-.main h3 {
-  margin-top: -2em;
-  color: var(--lighter-blue);
-}
-
-.benefit, .value {
-  padding: 1.5em;
-  margin: 1em;
-}
-
-.value img {
-  height: 250px;
-  display: block;
-  margin: 0 auto;
-}
-
-.benefits-grid, .values-grid {
-  display: none;
-}
-
-/*Community*/
-#community {
-  background-image: url("../images/bg-green.svg");
-}
-
-.testimonial-pic {
-  height: 180px;
-}
-
-.community-box {
-  margin-top: -1.3em;
-}
-
-.community-logo {
-  display: block;
-  margin: 0 auto;
-  height: 40px;
-}
-
-
-/*How*/
-#how span {
-  border-radius: 50%;
-  padding: 0.3em 0.7em;
-  font-weight: bold;
-  opacity: 0.9;
-  margin-left: 0.3em;
-}
-
-#how h3 {
-  margin: -1em 0 2em 0;
-  font-weight: 300;
-}
-
-#how span:first-child {
-  padding: 0.3em 0.8em;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.how-grid {
-  display: none;
-}
-
-.cellphone {
-  display: block;
-  height: 400px;
-  margin: 0 auto;
-}
-
-.text-spacing {
-  letter-spacing: 0.1em;
-}
-
-/*Who*/
-#who {
-  background-image: url("../images/bg-pink.svg");
-  background-size: cover;
-}
-
-.who-main, .work-main {
-  height: 380px;
-  margin: 0;
-  padding: 0;
-}
-
-.who-main h1 {
-  margin-top: 2em;
-}
-
-.who-mission h2 {
-  line-height: 1.5em;
-}
-
-.who-mission {
-  margin-top: -3em;
-}
-
-.who-pic {
-  background-image: url('../images/who.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.equipo-pic {
-  height: 180px;
-  width: 180px;
-}
-
-.equipo-box {
-  display: inline-block;
-  margin: 0.5em;
-}
-
-/*Work*/
-.work-pic {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-    url('../images/work.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-}
-
-.team-pic {
-  height: 200px;
-  display: block;
-  margin: 0 auto;
-}
-
-.position {
-  padding: 1em 0;
-  margin: 0;
-  display: block;
-}
-
-.quote-mandela {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.quote-mandela h2 {
-  font-size: 2em;
-  padding-bottom: 1em;
-  border-bottom: 2px solid var(--blue);
-}
-
-
-/*Contact*/
-#contact img {
-  display: block;
-  margin: 0 auto;
-}
-
-/*Chicharito*/
-.chicharito-flex {
-  padding-bottom: 2em;
-}
-
-.chicharito {
-  background-color: var(--charcoal);
-}
-
-.chat img, {
-  height: 30px;
-}
-
-.chat a {
-  font-family: var(--secondary-font);
-  font-size: 1.3em;
-  text-decoration: none;
-/*  border-bottom: solid 1px;*/
-}
-
-/*Footer*/
-footer img {
-  height: 40px;
-  margin: 0.5em;
-}
-
-.justify {
-  text-align: justify;
-}
-
-/* QA */
-/* tab */
-.qa-title {
-  padding-top: 1em;
-}
-
-.tab {
-  overflow: hidden;
-  text-align: center;
-}
-
-.tablinks, .tanda-membership-box {
-  font-size: 1.2em;
-}
-
-/* tab button */
-.tab button {
-  background-color: var(--green);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  margin: 0.2em;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.tab button:hover {
-  background-color: var(--blue);
-}
-
-/*tab content */
-.tabcontent {
-  display: none;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-.tabcontent h2 {
-  margin-left: 0.5em;
-}
-
-.tabcontent-flex {
-  display: flex;
-}
-
-/* Privacy */
-.privacy {
-  padding-top: 4em;
-}
-
-/* Tanda */
-.tanda {
-  background-color: var(--purple);
-  background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.55), rgba(47, 31, 232, 0.55)),
-    url('../images/productos.png');
-  background-size: contain;
-  height: 600px;
-}
-
-.tanda-main h2, .tanda-content h2 {
-  font-size: 2em;
-}
-
-.tanda-card {
-  border-color: var(--lilac-gray);
-  border-style: solid;
-  border-width: 5px 5px 15px 15px;
-}
-
-.tanda-how {
-  width: 100%;
-}
-
-.tanda-membership-box img {
-  width: 40px;
-}
-
-.tanda-membership-box h3 {
-  margin-left: 0.5em;
-  line-height: 1em;
-}
-
-/* Catálogo shopping club */
-.club-grid {
-}
-
-.club-card {
-  background-color: white;
-  margin: 1em;
-  padding: 1em;
-  border: 3px solid #dcdce8;
-  border-radius: 10px;
-}
-
-.club-product {
-  height: 200px;
-}
-
-.club-delivery {
-  height: 30px;
-}
-
-@media only screen and (min-width: 900px) {
-   nav {
-    display: flex;
-  }
-
-  .navlinks {
-    display: inline;
-  }
-
-  .navlinks a {
-    margin: 2em 0.7em;
-    color: var(--charcoal);
-    text-decoration: none;
-  }
-
-  .navlinks:last-child {
-    margin-right: 3em;
-  }
-
-  .navlinks a:hover {
-    font-weight: 400;
-  }
-
-  .navlinks a:active {
-    color: var(--primary-blue);
-  }
-
-  .icon-menu {
-    display: none;
-  }
-
-  .w-80 {
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 3em;
-    margin-bottom: -0.3em;
-  }
-
-  .p-body {
-    padding: 2em;
-  }
-
-  .main, .tanda {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-image: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .main h3 {
-    margin: 0.5em;
-    color: var(--charcoal);
-  }
-
-  .main-content, .tanda-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3em 0.5em 1.5em 3em;
-  }
-
-  .main-pic {
-    background-image: url('../images/home.png');
-    background-position: center bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .tanda-pic {
-    background-image: url('../images/productos.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding: 1em;
-    margin-right: 1em;
-  }
-
-  .phrase-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2em 0;
-  }
-
-  .phrase-grid h2, .who-main h2 {
-    font-size: 2em;
-    margin: auto 0;
-  }
-
-  .phrase {
-    border-radius: 70% 40% / 30% 80%;;
-  }
-
-  .values-grid, .tanda-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
-  }
-
-  .benefits-grid, .community-grid, .who-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1em;
-  }
-
-  #community h1 {
-    padding-bottom: 1em;
-  }
-
-  .community-box {
-    width: 90%;
-  }
-
-  #how {
-    background-size: contain;
-  }
-
-  #how h1 {
-    padding-bottom: 1em;
-  }
-
-  .how-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
-  }
-
-  .cel-box {
-    margin: 0 auto;
-  }
-
-  .cel-box:hover {
-    transform: scale(1.1);
-  }
-
-  .cellphone {
-    padding-top: 3em;
-  }
-
-  /* Who */
-  #who div{
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .who-main {
-    height: 500px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .who-main h1 {
-    margin-top: 2em;
-  }
-
-  .who-mission h2 {
-    font-size: 2em;
-    line-height: 1.5em;
-  }
-
-  .who-mission {
-    margin: -3em auto 0 auto;
-  }
-
-  .who-pic {
-    background-image: url('../images/who.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .equipo-box {
-    margin: 2em 0.5em 0.5em 0.5em;
-  }
-
-  #who .tanda-card {
-    width: 40%;
-    margin: 0 auto;
-  }
-
-  /* Work */
-  .work-main {
-    height: 700px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .position-title {
-    margin: 0.5em;
-  }
-
-  #contact h1 {
-    margin-bottom: 0.3em;
-    margin-top: 0em;
-  }
-
-  .quote-mandela {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .contact-grid {
-    width: 80%;
-    font-size: 1.2em;
-    margin: 0 auto;
-  }
-
-  .chicharito-flex {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0;
-  }
-
-  .chicharito-flex h2 {
-    margin-right: 2em;
-  }
-
-  .qa-title {
-    padding: 1em;
-  }
-
-  .tab button {
-    padding: 14px 30px;
-  }
-
-  .tablinks {
-    font-size: 1.5em;
-  }
-
-  .tabcontent {
-    padding: 1em 8em;
-  }
-
-  .privacy {
-    padding-top: 5em;
-  }
-
-  /* Work */
-  .team-quote {
-    display: flex;
-  }
-
-  .team-pic {
-    margin-right: 1.5em;
-  }
-
-  .tanda-how {
-    width: 50%;
-  }
-
-  .tanda-membership-box img {
-    width: 60px;
-    padding: 0.2em;
-  }
-
-  .tanda-membership-box h3 {
-    font-size: 2em;
-  }
-
-  .tanda-compras {
-    width: 400px;
-  }
-
-  .club-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  h1 {
-    font-size: 3.7em;
-  }
-
-  .main {
-    height: 600px;
-    padding: 0;
-  }
-
-  .main h3 {
-    font-size: 1.3em;
-    margin-top: 1em;
-  }
-
-  .main-content {
-    padding: 1.5em 0.5em 1.5em 3em;
-  }
-
-  .values-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .work-main {
-    height: 900px;
-  }
-
-  .line-break {
-    display: block;
-  }
-
-  .tanda-how {
-    width: 40%;
-  }
-
-  .club-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandamos preguntas frecuentes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-lilac-gray">
+  <nav class="bg-lilac-gray">
+    <a href="" class=""><img class="logo" src="images/logo.svg" alt="Tandamos logo"></a>
+  </nav>
+
+  <div class="tab">
+    <h1 class="qa-title blue">Club de compras</h1>
+    <h2>Productos destacados</h2>
+    <div class="club-grid">
+      <div class="club-card">
+        <img class="club-product" src="images/cel001.png" alt="">
+        <h3>Smartphone Motorola G31 4GB RAM 128GB ROM Gris Desbloqueado</h3>
+        <p>$4,999.00</p>
+        <p class="blue">Desde $250 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+      <div class="club-card">
+        <img class="club-product" src="images/cel002.png" alt="">
+        <h3>Smartphone Motorola Moto G10 64GB 4GB Ram Desbloqueado Aurora Grey</h3>
+        <p>$3,999.00</p>
+        <p class="blue">Desde $550 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+      <div class="club-card">
+        <img class="club-product" src="images/estufa001.png" alt="">
+        <h3>Estufa a Gas IEM 19 Pulgadas Negra</h3>
+        <p>$4,359.00</p>
+        <p class="blue">Desde $500 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+      <div class="club-card">
+        <img class="club-product" src="images/estufa002.png" alt="">
+        <h3>Estufa Acros 20 Pulgadas Negra</h3>
+        <p>$5,189.00</p>
+        <p class="blue">Desde $520 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+      <div class="club-card">
+        <img class="club-product" src="images/pantalla001.png" alt="">
+        <h3>TV Pioneer 55 Pulgadas 4K Ultra HD Smart TV LED PLE-55A10UHD</h3>
+        <p>$8,690.02</p>
+        <p class="blue">Desde $750 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+      <div class="club-card">
+        <img class="club-product" src="images/pantalla002.png" alt="">
+        <h3>TV Philips 55 Pulgadas 4K Ultra HD Smart TV LED 55PFL5756/F8</h3>
+        <p>$9,999.00</p>
+        <p class="blue">Desde $850 semanales</p>
+        <div class="flex">
+          <img class="club-delivery" src="images/truck.png" alt="">
+          <p class="little-text pl-1">Envío gratis</p>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.tandamos.tandamos" target="_blank" class="btn btn-lg">Lo quiero</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="p-body">
+    <div class="flex">
+      <a href="https://www.facebook.com/tandamos" target="_blank"><img src="images/fb-logo.svg" alt="Facebook logo"></a>
+      <a href="https://www.instagram.com/tandamos/" target="_blank"><img src="images/IG-logo.svg" alt="Facebook logo"></a>
+      <a href="https://www.linkedin.com/company/tandamos/" target="_blank"><img src="images/linkedin-logo.svg" alt="Facebook logo"></a>
+    </div>
+    <div class="who-box center">
+      <p class="little-text">Contacto</p>
+      <p class="little-text"><strong>info@tandamos.com</strong></p><br>
+    </div>
+    <div class="who-box center">
+      <p class="little-text">Horario</p>
+      <p class="little-text"><strong>Lunes a viernes de 9:00 a 18:00 hrs</strong></p>
+      <p class="little-text"><strong>Edificio Kavak, piso 3. Prol. Moliere 480, Polanco, CDMX</strong></p><br>
+    </div>
+    <img class="community-logo" src="images/logo.png" alt="Tandamos logo">
+
+    <p class="little-text justify">
+      Tecnología para Todos, S.A. de C.V. (“TANDAMOS”) es una sociedad mercantil legalmente constituida y existente de conformidad con las leyes de México. De conformidad con lo establecido en la Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (la "Ley") y su Reglamento, TANDAMOS se encuentra debidamenta registrada para realizar la actividad vulnerable de otorgamiento de créditos. Adicionalmente a dicho registro, TANDAMOS no requiere de autorización de la Secretaría de Hacienda y Crédito Público ni de la Comisión Nacional Bancaria y de Valores para su operación y únicamente está sujeta a la vigilancia en materia de prevención e identificación de operaciones con recursos de procedencia ilícita por parte de la Secretaría de Hacienda y Crédito Público, la Unidad de Inteligencia Financiera y del Servicio de Administración Tributaria.
+      Conoce nuestro <a href="privacy.html" class="blue">Aviso de privacidad</a>, la <a href="cookies.html">Política del uso de cookies</a>, el <a href="legal.html">Aviso legal</a>, el <a href="arco.html" class="blue">Procedimiento para ejercer los derechos Arco</a> y el <a href="autor.html" class="blue">Aviso Derecho de Autor Tandamos</a>.
+      ® 2021 TANDAMOS Todos los derechos reservados
+    </p>
+  </footer>
+</body>
+<script src="js/qa.js"></script>
+<script src="js/modal-menu.js"></script>
+</html>
