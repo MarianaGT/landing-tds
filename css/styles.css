@@ -590,6 +590,21 @@ footer img {
   line-height: 1em;
 }
 
+/* Catálogo shopping club */
+.club-grid {
+}
+
+.club-card {
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+  border: 3px solid #dcdce8;
+}
+
+.club-card img {
+  height: 200px;
+}
+
 @media only screen and (min-width: 900px) {
    nav {
     display: flex;
@@ -855,6 +870,11 @@ footer img {
   .tanda-compras {
     width: 400px;
   }
+
+  .club-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -890,5 +910,10 @@ footer img {
 
   .tanda-how {
     width: 40%;
+  }
+
+  .club-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
