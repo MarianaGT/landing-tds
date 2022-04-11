@@ -599,10 +599,15 @@ footer img {
   margin: 1em;
   padding: 1em;
   border: 3px solid #dcdce8;
+  border-radius: 10px;
 }
 
-.club-card img {
+.club-product {
   height: 200px;
+}
+
+.club-delivery {
+  height: 30px;
 }
 
 @media only screen and (min-width: 900px) {
