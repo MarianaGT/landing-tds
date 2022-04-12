@@ -880,7 +880,7 @@ footer img {
     width: 400px;
   }
 
-  .club-grid {
+  .club-grid, .club-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -924,5 +924,10 @@ footer img {
   .club-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .club-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 }
