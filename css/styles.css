@@ -161,8 +161,16 @@ h4 {
   padding-left: 1em;
 }
 
+.pt-1 {
+  padding-top: 1em;
+}
+
 .p-2 {
   padding: 2em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
 }
 
 .pb-2 {
@@ -614,6 +622,10 @@ footer img {
   height: 30px;
 }
 
+#description {
+  display: none;
+}
+
 @media only screen and (min-width: 900px) {
    nav {
     display: flex;
@@ -883,6 +895,10 @@ footer img {
   .club-grid, .club-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  #description {
+    display: block;
   }
 }
 
