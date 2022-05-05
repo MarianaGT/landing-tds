@@ -576,7 +576,7 @@ footer img {
   background-image: linear-gradient(to bottom, rgba(47, 31, 232, 0.55), rgba(47, 31, 232, 0.55)),
     url('../images/productos.png');
   background-size: contain;
-  height: 600px;
+  height: 400px;
 }
 
 .tanda-main h2, .tanda-content h2 {
@@ -622,9 +622,9 @@ footer img {
   height: 30px;
 }
 
-#description {
+/*#description {
   display: none;
-}
+}*/
 
 @media only screen and (min-width: 900px) {
    nav {
@@ -873,6 +873,10 @@ footer img {
 
   .team-pic {
     margin-right: 1.5em;
+  }
+
+  .tanda {
+    height: 500px;
   }
 
   .tanda-how {
